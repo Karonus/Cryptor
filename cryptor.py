@@ -10,7 +10,7 @@ if (os.path.exists("decrypt_files") == False):
 
 if len(sys.argv) == 1:
     print("Set the operating mode! Example: \"python cryptor.py [operating mode]\".")
-    print("Режимы работы:")
+    print("Operating modes:")
     print("   1) e - Encrypt text.")
     print("   2) d - Decrypt text.")
 
