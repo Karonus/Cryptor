@@ -1,7 +1,12 @@
-import sys
+import sys, os
 from Crypto.PublicKey import RSA
 from Crypto.Random import get_random_bytes
 from Crypto.Cipher import AES, PKCS1_OAEP
+
+if (os.path.exists("encrypt_result") == False):
+    os.mkdir("encrypt_result")
+if (os.path.exists("decrypt_files") == False):
+    os.mkdir("decrypt_files")
 
 if len(sys.argv) == 1:
     print("Set the operating mode! Example: \"python cryptor.py [operating mode]\".")
